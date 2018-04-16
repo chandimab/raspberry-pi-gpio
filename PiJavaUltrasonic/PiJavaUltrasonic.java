@@ -12,20 +12,6 @@ import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.RaspiPin;
 import com.pi4j.io.gpio.*;
 
-//to control pwm pins
-//pwm1 23,24 ; pwm0 1, 26
-import com.pi4j.wiringpi.Gpio;
-import com.pi4j.wiringpi.SoftPwm;
-
-		/**
-		 motor_left{pwm0=phy32/bcm12/wiringpi26, en=phy36/bcm16/wiringpi27}
-		 motor_right{pwm1=phy33/bcm13/wiringpi23, en=phy37/bcm26/wiringpi25}
-		 servo{pwm0=phy12/bcm18/wiringpi1}
-		 * 
-		 * pwm1: phy35/bcm19/wiringpi24
-		 * 
-		 **/
-
 public class PiJavaUltrasonic{
 	//bcm, GPIO_#
 	private int PIN_ECHO,PIN_TRIG;
